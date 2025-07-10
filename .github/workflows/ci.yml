@@ -85,6 +85,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+
       - name: Build Docker image
         run: |
           docker build -t $REGISTRY/${{ secrets.DOCKERHUB_USERNAME }}/activity_service:latest .
