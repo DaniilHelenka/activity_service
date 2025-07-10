@@ -42,7 +42,7 @@ jobs:
           java-version: '21'
 
       - name: Run tests
-        run: ./gradlew test --no-daemon
+        run: ./gradlew test
 
   code-analysis:
     runs-on: ubuntu-latest
@@ -58,7 +58,7 @@ jobs:
           java-version: '21'
 
       - name: Run Checkstyle
-        run: ./gradlew checkstyleMain checkstyleTest --no-daemon
+        run: ./gradlew checkstyleMain checkstyleTest
 
   docker-build:
     runs-on: ubuntu-latest
